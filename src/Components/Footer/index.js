@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { observer, inject } from 'mobx-react';
 import DisplayName from 'Components/Common/DisplayName';
 
@@ -24,6 +25,11 @@ class Footer extends React.Component {
       </div>
     )
   }
+}
+
+Footer.wrappedComponent.propTypes = {
+  ServerNamesStores: PropTypes.object.isRequired,
+  UserProfileStore: PropTypes.object.isRequired
 }
 
 export default Footer;
