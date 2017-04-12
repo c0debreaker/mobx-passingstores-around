@@ -1,7 +1,7 @@
 import React from 'react';
 import { observer, inject } from 'mobx-react';
 
-@inject('UserProfileStore', 'ServerNamesStores') @observer
+@inject('UserProfileStore') @observer
 class FooterChild5 extends React.Component {
 
   render() {
