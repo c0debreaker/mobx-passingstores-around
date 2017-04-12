@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react';
-import Clock from 'Components/Common/DisplayName';
+import DisplayName from 'Components/Common/DisplayName';
 
 @observer
 class Header extends React.Component {
@@ -20,7 +20,7 @@ class Header extends React.Component {
         <ul>
           {mobxObjectToArrayofObjects}
         </ul>
-        DisplayName(passing it down as props from this.props): <Clock getUserProfile={getUserProfile}/>
+        DisplayName(passing it down as props from this.props): <DisplayName getUserProfile={getUserProfile}/>
       </div>
     )
   }
