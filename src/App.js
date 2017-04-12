@@ -59,11 +59,9 @@ class App extends Component {
             <p><button onClick={this.updateWebUrl}>Update Web Url</button></p>
           </div>
           <div>
-            <h1>Header component - Passing stores to the child</h1>
             <Header UserProfileStore={UserProfileStore} ServerNamesStores={ServerNamesStores}/>
           </div>
           <div>
-            <h1>Footer component using @inject</h1>
             <Footer/>
           </div>
 

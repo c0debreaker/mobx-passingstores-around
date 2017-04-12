@@ -15,7 +15,8 @@ class Header extends React.Component {
     })
 
     return(
-      <div>
+      <div style={{background: '#bbbbbb', padding: '15px'}}>
+        <h1>Header Component</h1>
         Display Name: {getUserProfile.results[0].name.displayName}
         <ul>
           {mobxObjectToArrayofObjects}
