@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { observer, inject } from 'mobx-react';
 import DisplayName from 'Components/Common/DisplayName';
+import FooterChild1 from './footerchild1';
 
 @inject('UserProfileStore', 'ServerNamesStores') @observer
 class Footer extends React.Component {
@@ -22,6 +23,7 @@ class Footer extends React.Component {
           {mobxObjectToArrayofObjects}
         </ul>
         DisplayName(passing it down as props from @inject): <DisplayName getUserProfile={getUserProfile}/>
+        <FooterChild1/>
       </div>
     )
   }
