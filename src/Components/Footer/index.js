@@ -17,12 +17,15 @@ class Footer extends React.Component {
     })
 
     return(
-      <div>
+      <div style={{background: '#ffbc00', padding: '30px'}}>
+        <h1>Main Footer</h1>
         Display Name: {this.props.UserProfileStore.UserProfileDisplayName}
         <ul>
           {mobxObjectToArrayofObjects}
         </ul>
-        DisplayName(passing it down as props from @inject): <DisplayName getUserProfile={getUserProfile}/>
+        <p>
+          DisplayName(passing it down as props from @inject to DisplayName component): <DisplayName getUserProfile={getUserProfile}/>
+        </p>
         <FooterChild1/>
       </div>
     )
