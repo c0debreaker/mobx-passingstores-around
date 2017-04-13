@@ -8,7 +8,6 @@ import ServerNamesStores from './Stores/ServerNamesStores';
 import UserProfileStore from './Stores/UserProfileStore';
 const stores = { ServerNamesStores,  UserProfileStore}
 
-import logo from './logo.svg';
 import './App.scss';
 
 class App extends Component {
@@ -47,16 +46,10 @@ class App extends Component {
     return (
       <Provider {...stores}>
         <div className="App">
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>Welcome to React + MobX</h2>
-          </div>
-          <div>
-            Display Name(in App.js): {UserProfileStore.UserProfileDisplayName}
-          </div>
-          <div>
-            <p><input onChange={this.onInputChange} onKeyDown={this.handleKeyDown} value={this.state.displayName}/><button onClick={this.updateDisplayName}>Update display name</button></p>
-            <p><button onClick={this.updateWebUrl}>Update Web Url</button></p>
+          <div className="topbar">
+            <span>Display Name(in App.js): {UserProfileStore.UserProfileDisplayName}</span>
+            <span><input onChange={this.onInputChange} onKeyDown={this.handleKeyDown} value={this.state.displayName}/><button onClick={this.updateDisplayName}>Update display name</button></span>
+            <span><button onClick={this.updateWebUrl}>Randomize WebServer Url</button></span>
           </div>
           <div>
             <Header UserProfileStore={UserProfileStore} ServerNamesStores={ServerNamesStores}/>

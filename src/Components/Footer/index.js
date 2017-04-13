@@ -17,7 +17,7 @@ class Footer extends React.Component {
     })
 
     return(
-      <div style={{background: '#ffbc00', padding: '30px'}}>
+      <div style={{background: '#ffbc00', padding: '10px'}}>
         <h1>Main Footer</h1>
         Display Name: {this.props.UserProfileStore.UserProfileDisplayName}
         <ul>
