@@ -15,7 +15,7 @@ class Header extends React.Component {
     })
 
     return(
-      <div style={{background: '#bbbbbb', padding: '15px'}}>
+      <div style={{background: '#bdf1e5', padding: '15px'}}>
         <h1>Header Component</h1>
         Display Name: {getUserProfile.results[0].name.displayName}
         <ul>

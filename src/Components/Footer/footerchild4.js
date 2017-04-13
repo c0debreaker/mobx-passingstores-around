@@ -5,7 +5,7 @@ class FooterChild4 extends React.Component {
 
   render() {
     return(
-      <div style={{background: 'blue', padding: '10px'}}>
+      <div style={{background: '#a78d11', padding: '10px'}}>
         <h3>Footer Child 4</h3>
         <FooterChild5/>
       </div>
